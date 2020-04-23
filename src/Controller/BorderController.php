@@ -123,7 +123,7 @@ class BorderController extends FOSRestController
                 $border->setRidefrom($rideFrom);
                 $border->setRideto($rideTo);
                 $manager->persist($border);
-                $manager-flush();
+                $manager->flush();
             }
             $tour2border = new Tour2border();
             $tour2border->setPkeyBorder($border);
